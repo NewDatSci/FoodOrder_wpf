@@ -13,22 +13,19 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FoodOrder_wpf
+namespace FoodOrder_wpf.Views
 {
+    
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TableView : Page
     {
-        public MainWindow()
+        public TableView()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Views.TableView tableView = new Views.TableView();
-            this.MyFrame.Navigate(tableView);
-        }
+
     }
 }

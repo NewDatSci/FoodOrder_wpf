@@ -11,10 +11,10 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Frame Grid.Row="1"></Frame>
+        <Frame x:Name="MyFrame" Grid.Row="1"></Frame>
         <Rectangle Fill="Thistle"/>
         <StackPanel Grid.Row="0" Orientation="Horizontal">
-            <Button Height="30" Width="60" Margin="5" Background="{x:Null}" > Page 1</Button>
+            <Button Height="30" Width="60" Margin="5" Background="{x:Null}" Click="Button_Click" > Page 1</Button>
             <Button Height="30" Width ="60" Margin="5" Background="{x:Null}"> Page 2</Button>
             <Button Height="30" Width ="60" Margin="5" Background="{x:Null}"> Page 3</Button>
         </StackPanel>
